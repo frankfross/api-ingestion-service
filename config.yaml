@@ -1,0 +1,9 @@
+# api-ingestion-service configuration
+api:
+  base_url: "https://api.example.com/v1/orders"  # must return {"records": [...]}
+  page_size: 100
+  max_retries: 3
+
+db:
+  # SQLite file by default; or set DATABASE_URL=postgres://... to use Postgres
+  dsn: "data/records.db"
